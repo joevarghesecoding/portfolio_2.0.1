@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_website_2.0",
+  "version": "1.0.0",
+  "description": "Portfolio Redone",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Jyothish Joe Varghese",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
