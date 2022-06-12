@@ -2,9 +2,8 @@
   "name": "portfolio_website_2.0",
   "version": "1.0.0",
   "description": "Portfolio Redone",
-  "main": "gulpfile.js",
+  "main": "sass/mystyles.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
     "css-watch": "npm run css-build -- --watch",
     "start": "npm run css-watch"
@@ -12,11 +11,21 @@
   "author": "Jyothish Joe Varghese",
   "license": "ISC",
   "devDependencies": {
+    "bulma": "^0.9.4",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1",
     "sass": "^1.52.3"
   },
   "dependencies": {
     "browser-sync": "^2.27.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joevarghesecoding/portfolio_2.0.1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joevarghesecoding/portfolio_2.0.1/issues"
+  },
+  "homepage": "https://github.com/joevarghesecoding/portfolio_2.0.1#readme"
 }
