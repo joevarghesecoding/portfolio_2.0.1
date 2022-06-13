@@ -1,26 +1,42 @@
+// @charset "utf-8";
+// @import '/Users/jyothishvarghese/Desktop/portfolio_2.0/bulma/bulma.sass';
+
 @charset "utf-8";
-@import "../node_modules/bulma/bulma.sass";
+
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
-// Set your brand colors
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
+// // Set your brand colors
+// $purple: #8A4D76;
+// $pink: #FA7C91;
+// $brown: #757763;
+// $beige-light: #D0D1CD;
+// $beige-lighter: #EFF0EB;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Radio+Canada&family=Roboto+Flex:opsz,wght@8..144,300&family=Ruda:wght@500&family=Smooch&family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Radio+Canada&family=Roboto+Flex:opsz,wght@8..144,300&family=Ruda:wght@500&family=Smooch&family=Space+Grotesk:wght@300&display=swap');
+
+$bg-color: #FDF6E3;
+$navbar-color: #657B83;
+$navtext-color: #EEE8D5;
+$text-color: $navbar-color;
+
+$heading1-font: 'Ruda', Helvertica, sans-serif;
+$heading2-font: 'Sacramento', sans-serif;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: #000000;
-$link: $pink;
+// $grey-dark: $brown;
+// $grey-light: $beige-light;
+$primary: $navbar-color;
+$is-family-primary: $heading1-font;
+$is-family-secondary: $heading2-font;
+// $link: $pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+// $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
