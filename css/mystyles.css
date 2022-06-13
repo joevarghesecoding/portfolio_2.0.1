@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Radio+Canada&family=Roboto+Flex:opsz,wght@8..144,300&family=Ruda:wght@500&family=Smooch&family=Space+Grotesk:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Radio+Canada&family=Roboto+Flex:opsz,wght@8..144,300&family=Ruda:wght@500&family=Smooch&family=Space+Grotesk:wght@300&display=swap");
+.card {
+  height: 100%;
+}
+
 /* Bulma Utilities */
 .pagination-previous,
 .pagination-next,
@@ -12301,6 +12305,36 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-bottom: 7rem !important;
 }
 
+.m-center-card {
+  margin: 8rem !important;
+}
+
+.mt-center-card {
+  margin-top: 8rem !important;
+}
+
+.mr-center-card {
+  margin-right: 8rem !important;
+}
+
+.mb-center-card {
+  margin-bottom: 8rem !important;
+}
+
+.ml-center-card {
+  margin-left: 8rem !important;
+}
+
+.mx-center-card {
+  margin-left: 8rem !important;
+  margin-right: 8rem !important;
+}
+
+.my-center-card {
+  margin-top: 8rem !important;
+  margin-bottom: 8rem !important;
+}
+
 .p-small {
   padding: 1rem !important;
 }
@@ -12389,6 +12423,36 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .py-large {
   padding-top: 7rem !important;
   padding-bottom: 7rem !important;
+}
+
+.p-center-card {
+  padding: 8rem !important;
+}
+
+.pt-center-card {
+  padding-top: 8rem !important;
+}
+
+.pr-center-card {
+  padding-right: 8rem !important;
+}
+
+.pb-center-card {
+  padding-bottom: 8rem !important;
+}
+
+.pl-center-card {
+  padding-left: 8rem !important;
+}
+
+.px-center-card {
+  padding-left: 8rem !important;
+  padding-right: 8rem !important;
+}
+
+.py-center-card {
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
 }
 
 .is-size-1 {
