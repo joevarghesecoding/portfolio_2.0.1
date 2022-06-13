@@ -1,3 +1,4 @@
+//navbar button --NOT WORKING YET
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
@@ -17,4 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
+  });
+
+  //Projects slideshow -- Non-automatic
+ 
+
+  //Projects slideshow - Automatic
+  document.addEventListener('DOMContentLoaded', () => {
+  let slideIndex = 0;
+  showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  // for(slide of slides)
+  // {
+  //   console.log(slide);
+  // }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
   });
