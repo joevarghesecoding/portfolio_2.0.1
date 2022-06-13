@@ -10,8 +10,12 @@
   display: none;
 }
 
-.active, .pagination-link:hover {
-  background-color: #717171;
+.pagination-previous:hover, .pagination-next:hover, .pagination-link:hover {
+  background-color: #657B83;
+  border-color: #657B83;
+}
+.pagination-previous:hover .option, .pagination-next:hover .option, .pagination-link:hover .option {
+  color: #EEE8D5;
 }
 
 .fade {

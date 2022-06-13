@@ -10,7 +10,7 @@
   </head>
   <body>
     <section class="nav">
-      <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
 
         <div class="navbar-menu" id="mynav-menu1">
           <div class="navbar-start">
@@ -50,6 +50,9 @@
     </section>
   <section class="section" id="home">
     <div class="container">
+      <div class="columns">
+        <div class="column is-12" style="height:50px"></div>
+      </div>
       <div class="columns">
         <div class="column is-4 is-offset-6">
           <h2 class="title is-family-secondary has-text-primary has-text-weight-light is-size-1-mobile is-size-1-tablet">
@@ -113,13 +116,13 @@
 
             </figure>
             <nav class="pagination is-centered is-rounded is-small" role="navigation" aria-label="pagination">
-              <a href="#" class="pagination-previous">Previous</a>
-              <a href="#" class="pagination-next">Next</a>
+              <a href="#" class="pagination-previous"><span class="option">Previous</span></a>
+              <a href="#" class="pagination-next"><span class="option">Next</span></a>
               <ul class="pagination-list">
-                <li><a href="#" class="pagination-link" aria-label="Goto page 1">1</a></li>
-                <li><a href="#" class="pagination-link" aria-label="Goto page 2">2</a></li>
-                <li><a href="#" class="pagination-link" aria-label="Goto page 3">3</a></li>
-                <li><a href="#" class="pagination-link" aria-label="Goto page 4">4</a></li>
+                <li><a href="#" class="pagination-link" aria-label="Goto page 1"><span class="option">1</span></a></li>
+                <li><a href="#" class="pagination-link" aria-label="Goto page 2"><span class="option">2</span></a></li>
+                <li><a href="#" class="pagination-link" aria-label="Goto page 3"><span class="option">3</span></a></li>
+                <li><a href="#" class="pagination-link" aria-label="Goto page 4"><span class="option">4</span></a></li>
               </ul>
             </nav>
             <button class="button is-primary">More</button>

@@ -44,3 +44,29 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
   });
+
+  //Nav blur upon scrolling
+  document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('nav');
+    const brand = document.querySelector('.nav-brand');
+    const nav_list = document.querySelector('.nav-list');
+    const nav_left = document.querySelector('.navbar-start');
+    const nav_right = document.querySelector('.navbar-end');
+    let lastScrollPos = 0;
+    window.addEventListener('scroll', function() {
+        lastScrollPos = window.scrollY;
+       // console.log(lastScrollPos);
+        if(lastScrollPos > 600){
+            nav.style.backgroundColor = 'rgba(101, 123, 131, 0.7)';
+            nav.style.transition = 'background-color 1s ease';
+            nav.style.outline = 'none';
+            nav_left.style.display = 'none';
+            nav_right.style.display = 'none';
+        }
+        else {
+            nav.style.backgroundColor = 'rgb(101, 123, 131)';
+            nav_left.style.display = 'flex';
+            nav_right.style.display = 'flex';
+        }
+    })
+});
