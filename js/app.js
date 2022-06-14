@@ -107,6 +107,10 @@ document.addEventListener('DOMContentLoaded', () => {
     contact_slide(event);
   })
 
+  $('.contact-slide').hover(function (event) {
+    contact_slide(event);
+  })
+
   $('.contact-copy-button').click(function(event) {
     let id = event.target.id;
     if(id === 'github-copy') { copyText('https://github.com/joevarghesecoding'); }

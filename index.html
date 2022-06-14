@@ -81,7 +81,7 @@
     <div class="columns">
         <!-- about me -->
         <div class="column">
-          <div class="card">
+          <div class="card" id="about">
             <div class="card-content has-text-centered">
               <p class="title has-text-centered">About Me</p>
             </div>
@@ -94,13 +94,13 @@
               <p class="content has-text-justified">
                 Hi, I'm Joe, an aspiring Software Engineer. Ever since I was little, I was in love with computers. But only after growing up did I learn the amazing things they are capable of. I am learning day by day what their limits are, and in effect broadening my own.
               </p>
-              <button class="button is-primary">More</button>
+              <!-- <button class="button is-primary">More</button> -->
             </div>
           </div>
         </div>
         <!-- Projects -->
         <div class="column">
-          <div class="card">
+          <div class="card" id="projects">
             <div class="card-content has-text-centered">
               <p class="title has-text-centered">Projects</p>
               <figure class="image is-square">
@@ -129,7 +129,7 @@
                   <li><a href="#" class="pagination-link" aria-label="Goto page 4"><span class="option">4</span></a></li>
                 </ul>
               </nav>
-              <button class="button is-primary">More</button>
+              <!-- <button class="button is-primary">More</button> -->
             </div>
           </div>
         </div>
@@ -137,19 +137,19 @@
       <div class="columns">
         <!-- Resume -->
       <div class="column">
-        <div class="card">
+        <div class="card" id="resume">
           <div class="card-content has-text-centered">
             <p class="title has-text-centered">Resume</p>
             <figure class="image is-square">
               <img src="./images/Jyothish Joe Varghese Software Engineer Resume.jpg" alt="Current Resume Image">
             </figure>
-            <button class="button is-primary">Expand</button>
+            <button class="button is-primary">Download A Copy</button>
           </div>
         </div>
       </div>
       <!-- Contact -->
       <div class="column">
-        <div class="card">
+        <div class="card" id="contact">
           <div class="card-content has-text-centered">
             <p class="title">Contact</p>
             <!-- the link  -->
@@ -160,10 +160,10 @@
               <span>GitHub</span>  
             </p>
             <!-- the pop up -->
-            <div class="notification is-primary columns" id="github">
+            <div class="notification is-primary columns slide-in" id="github">
               <button class="delete"></button>
               <div class="column is-four-fifths">
-                <a href="#" class="link-to-contact has-text-centered">https://github.com/joevarghesecoding</a>
+                <a href="https://github.com/joevarghesecoding" class="link-to-contact has-text-centered" target="_blank">https://github.com/joevarghesecoding</a>
               </div>
               <div class="column">
                 <button class="button is-rounded is-light is-small contact-copy-button" id="github-copy">Copy</button>
@@ -176,10 +176,10 @@
               </span>
               <span>LinkedIn</span> 
             </p>
-            <div class="notification is-primary columns" id="linkedin">
+            <div class="notification is-primary columns slide-in" id="linkedin">
               <button class="delete"></button>
               <div class="column is-four-fifths">
-                <a href="#" class="link-to-contact has-text-centered">https://linkedin.com/jyothish-joe-varghese</a>
+                <a href="https://www.linkedin.com/in/jyothish-joe-varghese/" class="link-to-contact has-text-centered" target="_blank">https://www.linkedin.com/in/jyothish-joe-varghese/</a>
               </div>
               <div class="column">
                 <button class="button is-rounded is-light is-small contact-copy-button" id="linkedin-copy">Copy</button>
@@ -192,10 +192,10 @@
               </span>
               <span>Email</span>
             </p>
-            <div class="notification is-primary columns" id="email">
+            <div class="notification is-primary columns slide-in" id="email">
               <button class="delete"></button>
               <div class="column is-four-fifths">
-                <a href="#" class="link-to-contact has-text-centered">jyothish.j.varghese@gmail.com</a>
+                <a href="jyothish.j.varghese@gmail.com" class="link-to-contact has-text-centered" target="_blank">jyothish.j.varghese@gmail.com</a>
               </div>
               <div class="column">
                 <button class="button is-rounded is-light is-small contact-copy-button" id="email-copy">Copy</button>
@@ -208,10 +208,10 @@
               </span>
               <span>Phone</span>
             </p>
-            <div class="notification is-primary columns" id="phone">
+            <div class="notification is-primary columns slide-in" id="phone">
               <button class="delete"></button>
               <div class="column is-four-fifths">
-                <a href="#" class="link-to-contact has-text-centered">484-632-4860</a>
+                <a href="484-632-4860" class="link-to-contact has-text-centered" target="_blank">484-632-4860</a>
               </div>
               <div class="column">
                 <button class="button is-rounded is-light is-small contact-copy-button" id="phone-copy">Copy</button>
