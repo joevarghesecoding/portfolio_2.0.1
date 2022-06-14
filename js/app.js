@@ -113,10 +113,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
   $('.contact-copy-button').click(function(event) {
     let id = event.target.id;
-    if(id === 'github-copy') { copyText('https://github.com/joevarghesecoding'); }
-    if(id === 'linkedin-copy') { copyText('https://linkedin.com/jyothish-joe-varghese'); }
-    if(id === 'email-copy') { copyText('jyothish.j.varghese@gmail.com'); }
-    if(id === 'phone-copy') { copyText('484-632-4860'); }
+    if(id === 'github-copy') 
+    { 
+      copyText('https://github.com/joevarghesecoding');
+      event.target.innerHTML = 'Copied!';
+      $('#github-copy').addClass('is-success');
+      setTimeout(() => {
+        event.target.innerHTML = 'Copy';
+        $('#github-copy').removeClass('is-success');
+      }, 2000);
+    }
+
+    if(id === 'linkedin-copy') { 
+      copyText('https://linkedin.com/jyothish-joe-varghese'); 
+      event.target.innerHTML = 'Copied!';
+      $('#linkedin-copy').addClass('is-success');
+      setTimeout(() => {
+        event.target.innerHTML = 'Copy';
+        $('#linkedin-copy').removeClass('is-success');
+      }, 2000);
+    }
+    if(id === 'email-copy') { 
+      copyText('jyothish.j.varghese@gmail.com'); 
+      event.target.innerHTML = 'Copied!';
+      $('#email-copy').addClass('is-success');
+      setTimeout(() => {
+        event.target.innerHTML = 'Copy';
+        $('#email-copy').removeClass('is-success');
+      }, 2000);
+    }
+    if(id === 'phone-copy') { 
+      copyText('484-632-4860'); 
+      event.target.innerHTML = 'Copied!';
+      $('#phone-copy').addClass('is-success');
+      setTimeout(() => {
+        event.target.innerHTML = 'Copy';
+        $('#phone-copy').removeClass('is-success');
+      }, 2000);
+    }
   })
 
 
