@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
     <link rel="stylesheet" href="css/mystyles.css" >
     <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/b68d6a774a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <section class="nav">
@@ -77,59 +78,63 @@
 
   <section class="section" id="cards">
     <div class="columns">
-      <!-- about me -->
-      <div class="column">
-        <div class="card">
-          <div class="card-image has-text-centered">
-            <figure class="image is-128by128 is-rounded is-inline-block">
-              <img src="./images/face-pic.png" alt="Profile Picture">
-            </figure>
-          </div>
-          <div class="card-content has-text-centered">
-            <p class="title has-text-centered">About Me</p>
-            <p class="content has-text-justified">
-              Hi, I'm Joe, an aspiring Software Engineer. Ever since I was little, I was in love with computers. But only after growing up did I learn the amazing things they are capable of. I am learning day by day what their limits are, and in effect broadening my own.
-            </p>
-            <button class="button is-primary">More</button>
+        <!-- about me -->
+        <div class="column">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <p class="title has-text-centered">About Me</p>
+            </div>
+            <div class="card-image has-text-centered">
+              <figure class="image is-128by128 is-rounded is-inline-block">
+                <img src="./images/face-pic.png" alt="Profile Picture">
+              </figure>
+            </div>
+            <div class="card-content has-text-centered">
+              <p class="content has-text-justified">
+                Hi, I'm Joe, an aspiring Software Engineer. Ever since I was little, I was in love with computers. But only after growing up did I learn the amazing things they are capable of. I am learning day by day what their limits are, and in effect broadening my own.
+              </p>
+              <button class="button is-primary">More</button>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Projects -->
-      <div class="column">
-        <div class="card">
-          <div class="card-content has-text-centered">
-            <p class="title has-text-centered">Projects</p>
-            <figure class="image is-square">
-              <div class="mySlides fade">
-                <img src="./images/example-logo.jpg" alt="Example 1">
-              </div>
-              <div class="mySlides fade">
-                <img src="./images/free-letter-n-logo-template3672.jpeg" alt="Example 2">
-              </div>
-              <div class="mySlides fade">
-                <img src="./images/sample-logo-design-png-3-2.png" alt="Example 3">
-              </div>
-              <div class="mySlides fade">
-                <img src="./images/n_drb.webp" alt="Example 4">
-              </div>
-              
+        <!-- Projects -->
+        <div class="column">
+          <div class="card">
+            <div class="card-content has-text-centered">
+              <p class="title has-text-centered">Projects</p>
+              <figure class="image is-square">
+                <div class="mySlides fade">
+                  <img src="./images/example-logo.jpg" alt="Example 1">
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/free-letter-n-logo-template3672.jpeg" alt="Example 2">
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/sample-logo-design-png-3-2.png" alt="Example 3">
+                </div>
+                <div class="mySlides fade">
+                  <img src="./images/n_drb.webp" alt="Example 4">
+                </div>
+                
 
-            </figure>
-            <nav class="pagination is-centered is-rounded is-small" role="navigation" aria-label="pagination">
-              <a href="#" class="pagination-previous"><span class="option">Previous</span></a>
-              <a href="#" class="pagination-next"><span class="option">Next</span></a>
-              <ul class="pagination-list">
-                <li><a href="#" class="pagination-link" aria-label="Goto page 1"><span class="option">1</span></a></li>
-                <li><a href="#" class="pagination-link" aria-label="Goto page 2"><span class="option">2</span></a></li>
-                <li><a href="#" class="pagination-link" aria-label="Goto page 3"><span class="option">3</span></a></li>
-                <li><a href="#" class="pagination-link" aria-label="Goto page 4"><span class="option">4</span></a></li>
-              </ul>
-            </nav>
-            <button class="button is-primary">More</button>
+              </figure>
+              <nav class="pagination is-centered is-rounded is-small" role="navigation" aria-label="pagination">
+                <a href="#" class="pagination-previous"><span class="option">Previous</span></a>
+                <a href="#" class="pagination-next"><span class="option">Next</span></a>
+                <ul class="pagination-list">
+                  <li><a href="#" class="pagination-link" aria-label="Goto page 1"><span class="option">1</span></a></li>
+                  <li><a href="#" class="pagination-link" aria-label="Goto page 2"><span class="option">2</span></a></li>
+                  <li><a href="#" class="pagination-link" aria-label="Goto page 3"><span class="option">3</span></a></li>
+                  <li><a href="#" class="pagination-link" aria-label="Goto page 4"><span class="option">4</span></a></li>
+                </ul>
+              </nav>
+              <button class="button is-primary">More</button>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Resume -->
+      <div class="columns">
+        <!-- Resume -->
       <div class="column">
         <div class="card">
           <div class="card-content has-text-centered">
@@ -146,12 +151,37 @@
         <div class="card">
           <div class="card-content has-text-centered">
             <p class="title">Contact</p>
-            <p class="subtitle">
-              
+            <p class="subtitle" id="first-contact">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+              <span>GitHub</span>  
+            </p>
+            <p class="subtitle" id="second-contact">
+              <span class="icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </span>
+              <span>LinkedIn</span> 
+            </p>
+            <p class="subtitle" id="third-contact">
+              <span class="icon">
+                <i class="fa-solid fa-at"></i>
+              </span>
+              <span>Email</span>
+            </p>
+            <p class="subtitle" id="fourth-contact">
+              <span class="icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </span>
+              <span>
+                Phone
+              </span>
             </p>
           </div>
         </div>
       </div>
+      </div>
+      
     </div>
   </section>
   <section class="section" id="footer">
