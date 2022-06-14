@@ -70,3 +70,55 @@ function showSlides() {
         }
     })
 });
+
+
+  //Contacts copy text to clipboard
+document.addEventListener('DOMContentLoaded', () => {
+  const github = document.querySelector('#github');
+  const linkedin = document.querySelector('#linkedin');
+  const phone = document.querySelector('#phone');
+  const email = document.querySelector('#email');
+  
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    const $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.style.display = 'none';
+    });
+  });
+
+  function openSlide(x) {
+    x.style.display = 'flex';
+  }
+
+  function copyText(x){
+    navigator.clipboard.writeText(x);
+  }
+
+  $('.contact-slide').click(function (event) {
+    let id = $(this).attr('id');
+    if(id === 'github-contact') { openSlide(github); }
+    if(id === 'linkedin-contact') { openSlide(linkedin); }
+    if(id === 'email-contact') { openSlide(email); }
+    if(id === 'phone-contact') { openSlide(phone); }
+  })
+
+  // (document).querySelector('#github-contact').addEventListener('click', () =>{
+  //   openSlide(github);
+  //   copyText('https://github.com/joevarghesecoding');
+  // }); 
+  // (document).querySelector('#linkedin-contact').addEventListener('click', () =>{
+  //   openSlide(linkedin);
+  //   copyText('https://linkedin.com/jyothish-joe-varghese');
+  // });
+  // (document).querySelector('#phone-contact').addEventListener('click', () =>{
+  //   openSlide(phone);
+  //   copyText('484-632-4860');
+  // }); 
+  // (document).querySelector('#email-contact').addEventListener('click', () =>{
+  //   openSlide(email);
+  //   copyText('jyothish.j.varghese@gmail.com');
+  // });
+  // contact_slide.addEventListener('mouseover', showCopy());
+
+});

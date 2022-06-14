@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
     <link rel="stylesheet" href="css/mystyles.css" >
     <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/b68d6a774a.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -151,32 +152,72 @@
         <div class="card">
           <div class="card-content has-text-centered">
             <p class="title">Contact</p>
-            <p class="subtitle" id="first-contact">
+            <!-- the link  -->
+            <p class="subtitle contact-slide" id="github-contact">
               <span class="icon">
                 <i class="fa-brands fa-github"></i>
               </span>
               <span>GitHub</span>  
             </p>
-            <p class="subtitle" id="second-contact">
+            <!-- the pop up -->
+            <div class="notification is-primary columns" id="github">
+              <button class="delete"></button>
+              <div class="column is-four-fifths">
+                <a href="#" class="link-to-contact has-text-centered">https://github.com/joevarghesecoding</a>
+              </div>
+              <div class="column">
+                <button class="button is-rounded is-light is-small contact-copy-button">Copy</button>
+              </div>
+            </div>
+
+            <p class="subtitle contact-slide" id="linkedin-contact">
               <span class="icon">
                 <i class="fa-brands fa-linkedin"></i>
               </span>
               <span>LinkedIn</span> 
             </p>
-            <p class="subtitle" id="third-contact">
+            <div class="notification is-primary columns" id="linkedin">
+              <button class="delete"></button>
+              <div class="column is-four-fifths">
+                <a href="#" class="link-to-contact has-text-centered">https://linkedin.com/jyothish-joe-varghese</a>
+              </div>
+              <div class="column">
+                <button class="button is-rounded is-light is-small contact-copy-button">Copy</button>
+              </div>
+            </div>
+
+            <p class="subtitle contact-slide" id="email-contact">
               <span class="icon">
                 <i class="fa-solid fa-at"></i>
               </span>
               <span>Email</span>
             </p>
-            <p class="subtitle" id="fourth-contact">
+            <div class="notification is-primary columns" id="email">
+              <button class="delete"></button>
+              <div class="column is-four-fifths">
+                <a href="#" class="link-to-contact has-text-centered">jyothish.j.varghese@gmail.com</a>
+              </div>
+              <div class="column">
+                <button class="button is-rounded is-light is-small contact-copy-button">Copy</button>
+              </div>
+            </div>
+
+            <p class="subtitle contact-slide" id="phone-contact">
               <span class="icon">
                 <i class="fa-solid fa-mobile-screen"></i>
               </span>
-              <span>
-                Phone
-              </span>
+              <span>Phone</span>
             </p>
+            <div class="notification is-primary columns" id="phone">
+              <button class="delete"></button>
+              <div class="column is-four-fifths">
+                <a href="#" class="link-to-contact has-text-centered">484-632-4860</a>
+              </div>
+              <div class="column">
+                <button class="button is-rounded is-light is-small contact-copy-button">Copy</button>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

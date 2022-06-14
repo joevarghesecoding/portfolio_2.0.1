@@ -31,9 +31,13 @@
     opacity: 1;
   }
 }
-#first-contact, #second-contact, #third-contact, #fourth-contact {
+#linkedin-contact, #github-contact, #phone-contact, #email-contact {
   margin-top: 10%;
   font-size: 20px;
+}
+
+#email, #github, #phone, #linkedin {
+  display: none;
 }
 
 /* Bulma Utilities */
