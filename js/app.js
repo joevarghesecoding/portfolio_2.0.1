@@ -21,28 +21,58 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   //Projects slideshow -- Non-automatic
- 
+  document.addEventListener('DOMContentLoaded', () => {
+    let current = 0;
+    let end = 3;
+    let slides = document.getElementsByClassName('mySlides');
+    const next = document.querySelector('.pagination-next');
+    const previous = document.querySelector('.pagination-previous');
+
+    for(i = 0; i< slides.length; i++){
+      slides[i].style.display = 'none';
+    }
+
+    next.addEventListener('click', () => {
+      if(current < end){
+        current++;
+      }
+      else{
+        current = 0;
+      }
+
+      console.log('next ' + current);
+    })
+
+    previous.addEventListener('click', ()=> {
+      if(current <= end && current > 0){
+        current--;
+      }
+      else{
+        current = 3;
+      }
+      console.log('previous ' + current);
+    })
+    
+  })
 
   //Projects slideshow - Automatic
   document.addEventListener('DOMContentLoaded', () => {
   let slideIndex = 0;
   showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  // for(slide of slides)
-  // {
-  //   console.log(slide);
-  // }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let image = document.getElementsByClassName("hover-fade");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+   
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
   });
 
   //Nav blur upon scrolling
