@@ -102,6 +102,10 @@
 }
 
 .project-details {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  background-color: #FDF6E3;
   transition: 0.5 ease;
   opacity: 0;
   position: absolute;
@@ -109,16 +113,43 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-}
-
-.hover-fade:hover .fade img {
-  opacity: 0.3;
+  padding: 10rem;
+  text-align: center;
 }
 
 .hover-fade:hover .project-details {
-  opacity: 1;
+  opacity: 0.8;
 }
 
+#budget-app {
+  width: 65%;
+  padding: 10vh 5vw;
+  font-size: 2.5vw;
+}
+
+#wordle, #super-mario {
+  height: 85%;
+  font-size: 2.5vw;
+  padding: 10vh 5vw;
+}
+
+#tic-tac-toe {
+  height: 65%;
+  font-size: 2.5vw;
+  padding: 10vh 5vw;
+}
+
+@media screen and (min-width: 750px) {
+  #budget-app {
+    font-size: 1.5vw;
+  }
+  #wordle, #super-mario {
+    font-size: 1.5vw;
+  }
+  #tic-tac-toe {
+    font-size: 1.5vw;
+  }
+}
 /* Bulma Utilities */
 .pagination-previous,
 .pagination-next,

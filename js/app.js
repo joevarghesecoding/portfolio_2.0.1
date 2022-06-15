@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       slides[current].style.display = 'block';
       setTimeout(showSlides, 2000);
+      // current++ //if you want auto slide show but it doesnt work
     }
     
     function noSlideShow() {
@@ -93,25 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   })
 
-  //Projects slideshow - Automatic
-  // document.addEventListener('DOMContentLoaded', () => {
-  // let slideIndex = 0;
-  // showSlides();
-
-  // function showSlides() {
-  //   let i;
-  //   let slides = document.getElementsByClassName("mySlides");
-  //   let image = document.getElementsByClassName("hover-fade");
-  //   for (i = 0; i < slides.length; i++) {
-  //     slides[i].style.display = "none";
-  //   }
-  //   slideIndex++;
-  //   if (slideIndex > slides.length) {slideIndex = 1}
-  //   slides[slideIndex-1].style.display = "block";
-  //   setTimeout(showSlides, 2000); // Change image every 2 seconds
-   
-  // }
-  // });
+ 
 
   //Nav blur upon scrolling
   document.addEventListener('DOMContentLoaded', () => {
