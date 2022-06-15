@@ -22,14 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Projects slideshow -- Non-automatic
   document.addEventListener('DOMContentLoaded', () => {
+   
     let current = 0;
     let end = 3;
     let slides = document.getElementsByClassName('mySlides');
     const next = document.querySelector('.pagination-next');
     const previous = document.querySelector('.pagination-previous');
+    const one = document.querySelector('#project-1');
+    const two = document.querySelector('#project-2');
+    const three = document.querySelector('#project-3');
+    const four = document.querySelector('#project-4');
+    let pause = false;
 
-    for(i = 0; i< slides.length; i++){
-      slides[i].style.display = 'none';
+
+    if(!pause) {
+      showSlides();
+    }
+    else{
+      noSlideShow();
     }
 
     next.addEventListener('click', () => {
@@ -39,8 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
       else{
         current = 0;
       }
-
-      console.log('next ' + current);
     })
 
     previous.addEventListener('click', ()=> {
@@ -50,30 +58,60 @@ document.addEventListener('DOMContentLoaded', () => {
       else{
         current = 3;
       }
-      console.log('previous ' + current);
     })
+
+
+    one.addEventListener('click', ()=> {
+      current = 0;
+    }
+    );
+    two.addEventListener('click', ()=> {
+      current = 1;
+    }
+    );
+    three.addEventListener('click', ()=> {
+      current = 2;
+    }
+    );
+    four.addEventListener('click', ()=> {
+      current = 3;
+    }
+    );
+
+    function showSlides() {
+         
+      for(i = 0; i< slides.length; i++){
+        slides[i].style.display = 'none';
+      }
+      slides[current].style.display = 'block';
+      setTimeout(showSlides, 2000);
+    }
     
+    function noSlideShow() {
+
+    }
+
   })
 
   //Projects slideshow - Automatic
-  document.addEventListener('DOMContentLoaded', () => {
-  let slideIndex = 0;
-  showSlides();
+  // document.addEventListener('DOMContentLoaded', () => {
+  // let slideIndex = 0;
+  // showSlides();
 
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let image = document.getElementsByClassName("hover-fade");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  // function showSlides() {
+  //   let i;
+  //   let slides = document.getElementsByClassName("mySlides");
+  //   let image = document.getElementsByClassName("hover-fade");
+  //   for (i = 0; i < slides.length; i++) {
+  //     slides[i].style.display = "none";
+  //   }
+  //   slideIndex++;
+  //   if (slideIndex > slides.length) {slideIndex = 1}
+  //   slides[slideIndex-1].style.display = "block";
+  //   setTimeout(showSlides, 2000); // Change image every 2 seconds
    
-  }
-  });
+  // }
+  // });
 
   //Nav blur upon scrolling
   document.addEventListener('DOMContentLoaded', () => {
